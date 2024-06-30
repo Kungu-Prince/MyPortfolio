@@ -2,11 +2,10 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="icon" href="images/logo.ico" type="image/ico">
+    <link rel="icon" href="images/logo.png" type="image/png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -16,7 +15,7 @@
 </head>
 
 <body>
-    <div id="header">
+    <header id="header">
         <div class="container">
             <nav>
                 <img src="images/logo.png" class="logo" alt="logo">
@@ -25,21 +24,29 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
-
-                    <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
                 <i class="fas fa-bars" id="openbarmenu" onclick="openmenu()"></i>
             </nav>
 
             <div class="header-text">
                 <p>Aspiring Fullstack Developer...</p>
-                <h1>Hi, I'm <span>Kung'u</span>Prince from Kenya 254.</h1>
+                <h1>Hi, I'm <span>Kung'u</span> Prince from Kenya 254.</h1>
             </div>
         </div>
-    </div>
+    </header>
 
-    <!-- ************  about  ************** -->
-    <div id="about">
+    <section id="hobbies">
+        <div class="container">
+            <h2 class="section-title">Hobbies and Achievements</h2>
+            <div class="marquee">
+                <ul class="marquee-content">
+                    <li>Playing Table Tennis🙂, Playing Basketball❤️, Swimming😎, Watching Anime😉, Reading Novels😊, Developing Web Applications🙂, Contributing to Open Source Projects🤪, Participating in Coding Competitions😏, Attending Tech Conferences🙃. </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
@@ -47,8 +54,7 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>I am very passonate in
-                        tech, I like coding, watching syfy so as to pick from those imagination and develop that tech and web development. I would also like to dive into Web 3.</p>
+                    <p>I am very passionate in tech. I like coding, watching sci-fi so as to pick from those imaginations and develop that tech and web development. I would also like to dive into Web 3.</p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('software-skills')">Technical Skills</p>
                         <p class="tab-links" onclick="opentab('casual')">Non-Technical Skills</p>
@@ -58,32 +64,10 @@
 
                     <div class="tab-contents active-tab" id="software-skills">
                         <ul>
-                            <li><span>FullStack Developer </span><br>Web Developement</li>
-                            <li><span>Tech</span><br>HTML<br>CSS 
-                                <br>JavaScript 
-                                <br>NodeJS
-                                <br>Vue
-                                <br>MongoDB
-                                <br>Python 
-                                <br>C and C++
-
-                            <li><span>Library and Framework</span>
-                            <br>React Beginner
-                            <br>
-                            Bootstrap
-                            <br>
-                            Fontawesome
-                            <br>
-                            Tailwind
-                            <br>
-                            Vue
-                            <br>
-                            Flask
-                            
-                            <li><span>Tools</span>  
-                            <br> Arduino
-                            <br> VS Code
-
+                            <li><span>FullStack Developer</span><br>Web Development</li>
+                            <li><span>Tech</span><br>HTML, CSS, JavaScript, NodeJS, Vue, MongoDB, Python, C, C++</li>
+                            <li><span>Library and Framework</span><br>React Beginner, Bootstrap, Fontawesome, Tailwind, Vue, Flask</li>
+                            <li><span>Tools</span><br>Arduino, VS Code</li>
                         </ul>
                     </div>
 
@@ -91,18 +75,10 @@
                         <ul>
                             <li><span>Creative Thinking</span><br>Developing innovative ideas and solutions</li>
                             <li><span>Team Collaboration</span><br>Working effectively with team members to achieve common goals</li>
-                            <li><span>Communication</span><br>
-                                Facilitating clear and effective exchange of information in various platforms.
-                            </li>
-                            <li><span>Leadership</span><br>
-                                Leading and contributing to community projects aimed at improving productivity.
-                            </li>
-                            <li><span>Mentorship</span><br>
-                                Guiding and collaborating with peers in various programs.
-                            </li>
-                            <li><span>Hobbies</span><br>
-                                Enjoying activities such as playing table tennis, basketball, swimming, watching anime and sci-fi, and reading novels.
-                            </li>
+                            <li><span>Communication</span><br>Facilitating clear and effective exchange of information on various platforms</li>
+                            <li><span>Leadership</span><br>Leading and contributing to community projects aimed at improving productivity</li>
+                            <li><span>Mentorship</span><br>Guiding and collaborating with peers in various programs</li>
+                            <li><span>Hobbies</span><br>Enjoying activities such as playing table tennis, basketball, swimming, watching anime and sci-fi, and reading novels</li>
                         </ul>
                     </div>
 
@@ -110,24 +86,18 @@
                         <ul>
                             <li><span>UI</span><br>Designing Web</li>
                             <li><span>Web Development</span><br>Web app Development</li>
-                            <li><span>Project Bookhaven</span>
-                                <br>
-                            A web app for readers to stay updated and purchase books.
-                            <br>
-                            <a href="https://bookhaven-df029.firebaseapp.com/" rel="noopener noreferrer" target="_blank">Visit Bookhaven</a>
-
+                            <li><span>Project Bookhaven</span><br>A web app for readers to stay updated and purchase books.<br>
+                                <a href="https://bookhaven-df029.firebaseapp.com/" target="_blank" rel="noopener noreferrer">Visit Bookhaven</a>
                             </li>
-                            <li><span>Environmental Contribution by managing Trash</span> <br />
-                                As a professional in the tech industry, our goal is to leverage technology to innovate and optimize waste disposal, collection, and management systems. By implementing advanced technological solutions, we strive to minimize pollution and promote a cleaner, healthier environment. Our commitment is to ensure efficient waste management processes that significantly reduce environmental impact..<br />
-                                <a href="https://github.com/Kungu-Prince/Smart-dustbin.git" rel="noopener noreferrer" target="_blank">Visit Smart bin</a>
-
+                            <li><span>Environmental Contribution by managing Trash</span><br>Leveraging technology to innovate and optimize waste disposal, collection, and management systems. Minimizing pollution and promoting a cleaner, healthier environment.<br>
+                                <a href="https://github.com/Kungu-Prince/Smart-dustbin.git" target="_blank" rel="noopener noreferrer">Visit Smart bin</a>
                             </li>
                         </ul>
                     </div>
 
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>B.Tech</span><br>INFORMATION TECHNOLOGY</li>
+                            <li><span>B.Sci</span><br>INFORMATION TECHNOLOGY</li>
                             <li><span>ZETECH University</span><br><i class="fa fa-map-marker"></i> Ruiru, Kenya</li>
                         </ul>
                     </div>
@@ -135,23 +105,19 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!------------Portfolio-------->
-    <div id="portfolio">
+    <section id="portfolio">
         <div class="container">
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
-
                 <div class="work">
                     <img class="work-pic" src="images/work-1.png" alt="work pic 1">
                     <div class="layer">
                         <h3>Weather App</h3>
-                        <p class="work-desc"> Users have the privilege to view the exclusive weather forecast tailored
-                            to their specific needs and preferences.</p>
-                            <br>
+                        <p class="work-desc">Users have the privilege to view the exclusive weather forecast tailored to their specific needs and preferences.</p>
                         <p>Test my app here</p>
-                        <a href="https://lookupweather.netlify.app/" rel="noopener noreferrer">Try it</a>
+                        <a href="https://lookupweather.netlify.app/" target="_blank" rel="noopener noreferrer">Try it</a>
                     </div>
                 </div>
 
@@ -159,16 +125,9 @@
                     <img class="work-pic" src="images/Bookhaven.jpg" alt="work pic of bookhaven App">
                     <div class="layer">
                         <h3>Bookhaven</h3>
-                        <p class="work-desc">Our cutting-edge web app provides an engaging platform for book lovers to buy
-                            and sell their favorite reads. Users can effortlessly post their books for sale, ensuring they
-                            reach an audience of like-minded enthusiasts. Additionally, our app allows users to browse and
-                            purchase books across a wide range of genres, catering to diverse literary interests. By fostering
-                            a vibrant community of readers and sellers, our platform seamlessly connects individuals through their
-                            shared passion for books.</p>
-                    <br>
+                        <p class="work-desc">Our cutting-edge web app provides an engaging platform for book lovers to buy and sell their favorite reads. Users can effortlessly post their books for sale, ensuring they reach an audience of like-minded enthusiasts. Additionally, our app allows users to browse and purchase books across a wide range of genres, catering to diverse literary interests. By fostering a vibrant community of readers and sellers, our platform seamlessly connects individuals through their shared passion for books.</p>
                         <p>Test my app here</p>
                         <a href="https://bookhaven-df029.firebaseapp.com/" target="_blank">Try it</a>
-
                     </div>
                 </div>
 
@@ -176,21 +135,17 @@
                     <img class="work-pic" src="images/Smart bin.jpg" alt="work pic 1 of Quiz App">
                     <div class="layer">
                         <h3>Smart dustbin</h3>
-                        <p class="work-desc"> This is a C++ code for an arduino board. The aim is to create a smart dustbin to aid in
-                            trash management in smart cities.</p>
-                        <br>
+                        <p class="work-desc">This is a C++ code for an Arduino board. The aim is to create a smart dustbin to aid in trash management in smart cities.</p>
                         <p>Test my app here</p>
                         <a href="https://github.com/Kungu-Prince/Smart-dustbin.git" target="_blank">Try it</a>
                     </div>
                 </div>
-
             </div>
             <a href="#" class="btn">See more</a>
         </div>
-    </div>
-
-    <!------******Contacts*****-------->
-    <div id="contact">
+    </section>
+    
+    <section id="contact">
         <div class="container">
             <div class="row">
                 <div class="contact-left">
@@ -202,40 +157,35 @@
                     </div>
 
                     <div class="social-icons">
-                        <a href="https://princekungu8@gmail.com"><i class="fas fa-envelope"></i></a>
+                        <a href="mailto:princekungu8@gmail.com"><i class="fas fa-envelope"></i></a>
                         <a href="https://github.com/Kungu-Prince"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/https:/prince-kungu/">
-                            <i class="fab fa-linkedin"></i></a>
-                      <!--  <a href="https://x.com/KunguPrince"><i class="fab fa-twitter"></i></a> -->
+                        <a href="https://www.linkedin.com/in/prince-kungu/"><i class="fab fa-linkedin"></i></a>
                     </div>
 
                     <a href="images/Curriculum Vitae.pdf" class="btn btn2" target="_blank">Download CV</a>
                 </div>
 
                 <div class="contact-right">
-                    <h3>Contact Form</h3>
-                    <form method="post" action="https://formsubmit.co/princekungu8@gmail.com"
-                        enctype="multipart/form-data">
-
-                        <input type="text" placeholder="First Name" name="First Name" required>
-                        <input type="text" placeholder="Last Name" name="Last Name" required>
-                        <input type="email" placeholder="youremail@email.com" name="email" required>
-                        <input type="phone" placeholder="phone (optional)" name="phone">
-                        <textarea name="message" rows="6" placeholder="Your message..."></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                        <input type="hidden" name="_next" value="https://Kungu-Prince.github.io/portfolio">
-
+                    <h3>Get In Touch</h3>
+                    <form id="contact-form" action="https://formspree.io/f/xknagydo" method="POST">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Send Message</button>
                     </form>
                 </div>
             </div>
         </div>
-
-    </div>
+    </section>
 
     <footer>
-        <p>Copyright <i class="fas fa-copyright"></i>
-            Kung'u, Made with <i class="fas fa-heart"></i></p>
+        <p>Kung'u Prince</p>
+        <p>Copyright @ 2024 <i class="fas fa-copyright"></i>
+        <i class="fas fa-heart"></i></p>
     </footer>
+
+    <!-- Scroll-to-Top Button -->
+    <button id="scroll-to-top"><i class="fas fa-chevron-up"></i></button>
 
 </body>
 
